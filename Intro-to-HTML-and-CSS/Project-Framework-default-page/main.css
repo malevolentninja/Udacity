@@ -1,0 +1,49 @@
+h1 {
+
+    color:green;
+}
+
+* {
+    border: 1px solid red !important;
+    font-family: 'Handlee', cursive;
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 300px) {
+
+    p {
+        background-color:blue;
+    }
+}
+.row {
+    width:100%;
+    display:flex; flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+    margin:10px;
+}
+
+.col-5 {
+    width: 41.66%;
+}
