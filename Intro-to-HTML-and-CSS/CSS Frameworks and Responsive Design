@@ -53,4 +53,83 @@ col-2 (2 columns wide)
 col-3
 col-12 (full width of row)
 
+7. Negative space
 
+Used to create space for text and images. Layout easier to read. 
+Padding on inside and margins are for the outside. 
+e.g padding: 10px; will be inside  area whereas margin: 10px;will be outside
+margin pushes elements away from eachother. 
+Can add sides to be specific e.g. top, bottom , left or right. 
+
+8. Overflow
+
+let text flow
+
+overflow:auto;
+
+
+9. Media Queries
+
+change css properties depending on device :size, screen and colour.
+@media  is the query start 
+@media only  screen refers to the screen change.
+
+@media only screen and (max-width: 300px) {
+
+    p {
+        background-color:blue;
+    }
+}
+
+This says only change when the max-width is 300px.
+if these two conditions apply then change the paragraph background colour to blue. 
+
+Make paragraphs disappear if the pixels are smaller than 500px:
+
+@media only screen and (max-width: 500px) {
+  p {
+      display: none;
+     }
+ }
+ 
+ 
+ 
+ 10. CSS resetting
+ 
+ Need to ensure regardless of brower or operating systems. 
+ normalise.css ensures styles interpreted across the setting. 
+ link to normalise.css stylesheet then it will work across browsers. 
+ 
+11. Problems 
+
+Encountering problems which have most likely been done before e.g. stack overflow. 
+
+12. Semantic structure 
+
+once figured structure look at semantic tags , h1, h2 , h3, images and forms 
+
+Ask if any text needs to stand out. 
+
+red top box names  need <h1>
+
+organiseing projects 'featured work' = <h2>
+
+
+smaller ones = <h3> tags. 
+
+
+13. Turning the page. 
+
+Make placholder images for the size. 
+placehold.it have dimensions pre done. 
+
+
+14. Continuous improvements 
+
+Once you have the layout done it is important to find fonts and colours which are closest to the design. 
+
+
+15. Code Test, Refine, Repeat
+
+Look for layout 
+customise 
