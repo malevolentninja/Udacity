@@ -8,10 +8,10 @@
 
 
 
-//var email = "olivia@gmail.com";
+//var email = "hjhoa@gmail.com";
 
 // var newEmail =
-    //email.replace("olivia", "Oliviaboertje");
+    //email.replace("olivia", "fdgfhjki");
 
 //console.log(email);
 //conosle.log(newEmail);
@@ -45,29 +45,54 @@ $("#header").prepend(formattedName);
 $("#header").prepend(formattedRole);
 
 
-var skills = 
+/* var skills = 
     ["awesomeness","programming", "Html", "CSS", "Js" ];
 
 $("#main").append(skills);
 
-//$("#main").append(skills[0]);
+$("#main").append(skills[0]);
 
-//$("#main").append(skills.length);
+$("#main").append(skills.length);
+*/
 
-
-var img = document.createElement("img");
+/* var img = document.createElement("img");
     img.src="images/me.png";
     var src = document.getElementById("header");
 src.appendChild(img);
 
+*/
+
 var bio = {};
-    "name" : "Olivia";
-        "age" : 22;
-        "skills" : skills
-};
+    "name" : "Olivia",
+     "age" : 22,
+    "role" : "Newbie Web Developer",
+     "skills" : skills
+    "contact": {
+        "mobile" : 
+        "email": 
+        "github" : 
+        "twitter" : 
+        "location" :        
+      
+},
 
 
-$("#main").append(bio.name);z
+"welcomeMessage" : "Welcome to my portfolio".
+"Skills" : ["awesomeness", "programming", "Html", "CSS", "Js" ],
+    "bioPic" : "images/me.png"
+
+}
+$("#main").append(bio.name);
+
+bio.city = "London";
+bio.email = "myemail@email.com"
+
+$("#main").append(bio.city);
+
+// bio ["city"] = "London";
+//$("#main").append(bio["city"]);
+
+
 
 
 
