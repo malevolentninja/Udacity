@@ -55,6 +55,11 @@ $("#main").append(skills);
 //$("#main").append(skills.length);
 
 
+var img = document.createElement("img");
+    img.src="images/me.png";
+    var src = document.getElementById("header");
+src.appendChild(img);
+
 var bio = {};
     "name" : "Olivia";
         "age" : 22;
