@@ -37,22 +37,22 @@ var name = "Olivia";
 var formattedName = HTMLheaderName.replace("%data%", name);
 
 
-//var role = "Web Developer";
-//var formattedRole = HTMLheaderRole.replace("%data%", role );
+var role = "Web Developer";
+var formattedRole = HTMLheaderRole.replace("%data%", role );
 
 
-//$("#header").prepend(formattedName);
-//$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("#header").prepend(formattedRole);
 
 
 var skills = 
     ["awesomeness","programming", "Html", "CSS", "Js" ];
 
-// $("#main").append(skills);
+$("#main").append(skills);
 
 //$("#main").append(skills[0]);
 
-$("#main").append(skills.length);
+//$("#main").append(skills.length);
 
 
 var bio = {};
@@ -62,7 +62,7 @@ var bio = {};
 };
 
 
-$("#main").append(bio.name);
+$("#main").append(bio.name);z
 
 
 
