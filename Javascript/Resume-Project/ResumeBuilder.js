@@ -17,6 +17,21 @@
 //conosle.log(newEmail);
 
 
+/* var name = "OlIViA BOertJe";
+
+function nameChanger(oldName) {
+    var finalName = oldName;
+    var names = oldName.split(" ");
+    names[1] = names[1].toUpperCase();
+    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+    finalName = names.join(" ");
+    return finalName;
+};
+
+console.log(nameChanger(name));
+
+*/
+
 //var awesomeThoughts = "My name is Olivia and I am AWESOME!";
 
 //console.log(awesomeThoughts);
@@ -101,17 +116,28 @@ $("#main").append(bio.city);
 
 
 
-/* var name = "OlIViA BOertJe";
 
-function nameChanger(oldName) {
-    var finalName = oldName;
-    var names = oldName.split(" ");
-    names[1] = names[1].toUpperCase();
-    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
-    finalName = names.join(" ");
-    return finalName;
-};
 
-console.log(nameChanger(name));
 
-*/
+var work = {};
+    work.position = "Customer Assistant";
+    work.employer = "Marks and Spencers";
+    work.years = 0.3;
+    work.city = "London";
+
+
+                       
+var education = {}; 
+  education["name"] = "MHCHS";
+   education["years"] = 2006-2013;
+   education ["city"] = "London" ; 
+
+$("#main").append(work["position"]);               
+$("#main").append(education.name);
+
+
+
+
+
+
+
