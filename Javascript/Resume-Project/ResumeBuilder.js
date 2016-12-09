@@ -2,13 +2,13 @@ var bio = {};
     "name" : "Olivia",
      "age" : 22,
     "role" : "Newbie Web Developer",
-     "skills" : skills
+  
     "contact": {
         "mobile" : 
         "email": 
         "github" : 
         "twitter" : 
-        "location" :        
+        "location" : ["Exeter ," "London" ]   
       
 },
 
@@ -18,21 +18,6 @@ var bio = {};
     "bioPic" : "images/me.png"
 
 }
-$("#main").append(bio.name);
-
-bio.city = "London";
-bio.email = "myemail@email.com"
-
-$("#main").append(bio.city);
-
-// bio ["city"] = "London";
-//$("#main").append(bio["city"]);
-
-var work = {};
-    work.position = "Customer Assistant";
-    work.employer = "Marks and Spencers";
-    work.years = 0.3;
-    work.city = "London";
 
 
                        
@@ -65,13 +50,81 @@ var education = {
 	"url": "https://www.udacity.com/course/javascript-basics--ud804"
 }]
 };
-//$("#main").append(work["position"]);               
-//$("#main").append(education.name);
 
 
-// JSON nested data use 
+var work = {
+
+    "Jobs"[ 
+    {
+    work.position = "Customer Assistant";
+    work.employer = "Marks and Spencers";
+    work.years = 0.3;
+work.dates = "4th Octoboer..."
+    work.description = 
+        "This role involves helping customers find products, ensure the shops standards are well amaintained(e.g. neat, full shelves) "
+    "have good knowledge of beers, wines, spirits and other drinks to help the customer make an informed decision about the products they wish to purchase."
+
+},
+
+ {
+    "position" : "Customer Assistant";
+    "employer" : "Marks and Spencers";
+    "years" = 0.3;
+    "dates" = "4th Octoboer..."
+    "description" = "blah blah"
+
+ }
+
+ ]
+
+},
+
+	
+var projects = {
+    "projects" : [
+        {
+            "title": "My First Website"
+            "dates" : "2016"
+            "description" : "This website uses the basic forms of html and css to design a simple webpage."
+
+            "images" : [
+                "https://unsplash.it/g/200/300",
+                "https://unsplash.it/g/200/300"
+
+            ]
+}
+
+]
+},
 
 
+{
+            "title": "My First portfolio page"
+            "dates" : "2016"
+            "description" : "This websit html , css and js."
+
+            "images" : [
+                "https://unsplash.it/200/300/?random",
+                "https://unsplash.it/200/300/?random"
+
+            ]
+}
+
+]
+},
 
 
+{
+            "title": "My Resume"
+            "dates" : "2016"
+            "description" : "Harnesses Javascript to make an advanced portfolio page."
 
+            "images" : [
+                "https://unsplash.it/200",
+                "https://unsplash.it/200"
+
+            ]
+}
+
+]
+},
