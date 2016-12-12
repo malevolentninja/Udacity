@@ -1,0 +1,7 @@
+<TextView
+    android:text="Wait, today's your birthday?  Happy Birthday to you, happy birthday to you, happy birthday to Dad, Happy Birthday to you!"
+    android:background="#E3F2FD"
+    android:textColor="#64B5F6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:textAppearanceLarge" />
