@@ -67,8 +67,8 @@ work.dates = "4th Octoboer..."
 },
 
  {
-    "position" : "Customer Assistant";
-    "employer" : "Marks and Spencers";
+    "position" : "example";
+    "employer" : "N/a";
     "years" = 0.3;
     "dates" = "4th Octoboer..."
     "description" = "blah blah"
