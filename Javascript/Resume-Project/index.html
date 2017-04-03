@@ -5,12 +5,11 @@
  
   <meta charset="utf-8">
 
-
+ <a href="css/style.css" rel="stylesheet" type="text/css"> </a>
+ <script src="js/jQuery.js"> </script>
+ <script src="js/helper.js"> </script>
+ 
   <title>Resume</title>
-
-  <link href="css/style.css" rel="stylesheet">
-
-
 
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
@@ -33,7 +32,7 @@
     <div id="projects">
       <h2>Projects</h2>
     </div>
-    <div id="education" class="gray">
+    <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
     <div id="mapDiv">
@@ -73,14 +72,15 @@
 
 
   <script>
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-    //   two slashes for all following characters on a single line, or
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
+    
+   $(document).ready(function() {
+  $('button').click(function() {
+    var $name = $('#name');
+    var iName = inName($name.text()) || function(){};
+    $name.html(iName);
+  });
+});
+   
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';
     }
@@ -116,9 +116,10 @@
     $("#skills").append(formattedSkill);
     
    }
-    
+  function displayWork()
   for (job in work.jobs) {
-   $("workExperience").append(HTMLworkStart);
+  }
+  /* $("workExperience").append(HTMLworkStart);
    
    var formattedEmployer = HTMLworkEmployer.replace
     ("%data%", work.jobs[job].employer);
@@ -128,9 +129,17 @@
      formattedTitle;
    
    $(".work-entry:last").append (
-    formattedEmployerTitle);
+    formattedEmployerTitle);*/
   }
+   displayWork();
     
+   $(document).click(function(loc) {
+  // My code here!
+});
+   
+   
+   
+   
   </script>
 </body>
 </html>
