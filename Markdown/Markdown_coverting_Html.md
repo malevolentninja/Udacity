@@ -1,6 +1,6 @@
 # My Fabulous Recipe
 
-This receipe for ** cereal and milk ** has been passed down my family for months.
+This receipe for **cereal and milk** has been passed down my family for months.
 
 ## Ingredients
 
