@@ -43,7 +43,8 @@ var education = {
 
 	}
 ],
-"onlineCourses": [{
+"onlineCourses": [
+	{
 	"title": "Javascript Syntax",
 	"Schools": "Udacity",
 	"Dates": 2016,
@@ -55,11 +56,21 @@ var education = {
 var work = {
 
     "Jobs"[ 
+
+	{
+	work.position = "Education Catalyst Project Coordinator";
+	work.employer = "Exeter University";
+	work.years = 0.4;
+	work.dates = "7th 'January -   2017";
+	work.description  = " " ; 
+	
+},
+	
     {
     work.position = "Customer Assistant";
     work.employer = "Marks and Spencers";
     work.years = 0.3;
-work.dates = "4th Octoboer..."
+work.dates = "4th October 2016 - 5th January 2017"
     work.description = 
         "This role involves helping customers find products, ensure the shops standards are well amaintained(e.g. neat, full shelves) "
     "have good knowledge of beers, wines, spirits and other drinks to help the customer make an informed decision about the products they wish to purchase."
@@ -70,7 +81,7 @@ work.dates = "4th Octoboer..."
     "position" : "example";
     "employer" : "N/a";
     "years" = 0.3;
-    "dates" = "4th Octoboer..."
+    "dates" = "4th October..."
     "description" = "blah blah"
 
  }
@@ -113,10 +124,21 @@ var projects = {
 ]
 },
 
+	{ 
+		"title": " "
+            "dates" : "2017"
+            "description" : "This websit used "
+
+            "images" : [
+                "https://unsplash.it/200/300/?random",
+                "https://unsplash.it/200/300/?random"
+		]
+		
+	}, 
 
 {
             "title": "My Resume"
-            "dates" : "2016"
+            "dates" : "2017"
             "description" : "Harnesses Javascript to make an advanced portfolio page."
 
             "images" : [
@@ -218,3 +240,4 @@ function inName(name) {
 
 $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
+
