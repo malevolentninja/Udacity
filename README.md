@@ -39,7 +39,7 @@ Taking the structure and using it for my own development.
 
 
 ## 2. Java
-* Introduction to Java Programming [incomplete]
+* Introduction to Java Programming
 * Introduction to Java: Functional Programming
 
 ### 3. Markdown 
