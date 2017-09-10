@@ -89,10 +89,39 @@ var firstname = "Richard // bad - clear description but not camelCase
 ### Mini-Challenge: Covert Temperatures (Celsius to Fahrenheit)
 * covert Celsius to Fahrenhiet - formula: F=C×1.8+32
 * Use the equation and variables fahrenheit and celsius to print the Fahrenheit equivalent of 12°C
-
+```sh
 var celsius = 12;
 var fahrenheit = celsius * 1.8 + 32; // equation here using celsius variable
 console.log(fahrenheit); //logs the outcome  53.6
+```
 
+### String Index
+What character will be printed to the JavaScript console after running the following lines of code:
+```sh
+var quote = "Stay awhile and listen!";
+console.log(quote[6]); // w is the character. could have also used charAt() to find the string index
+```
 
+### Escaping Strings
 
+*Select the string that returns the following output:
+"The file located at "C:\\Desktop\My Documents\Roster\names.txt" contains the names on the roster."
+
+```sh
+The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster."
+
+```
+
+### Comparing Strings
+
+* Enter each expression into the console
+* Check the ones that evaluate to true
+
+"green" == "blue" // false
+"green" == "green" // true
+"green" == "Green // false
+"Green" == "green" // false
+"green" > "blue" //true
+"green" > "green" //false
+"green" > "Green" // true
+"Green" > "green" // false
