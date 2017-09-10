@@ -261,16 +261,17 @@ console.log(madLib);
 ```
 
 5. One Awesome Message
-Declare and assign values to three variables for each part of the sentence that changes
- (firstName, interest, and hobby).
-Use your variables and string concatenation to create your own awesome message
-and store it in an awesomeMessage variable.
-Finally, print your awesome message to the JavaScript console.
+* Declare and assign values to three variables for each part of the sentence that changes
+ (firstName, interest, and hobby)
+* Use your variables and string concatenation to create your own awesome message
+* Store it in an awesomeMessage variable
+* Finally, print message to the JavaScript console
 
-Code:
+```sh
 var firstName = "Liv";
 var interest = "problem solving";
 var hobby = "Kung Fu";
 
 var awesomeMessage = "Hi, my name is "+ firstName + "." + " I love " + interest + "." +  " In my spare time, I like to practice "+ hobby + ".";
 console.log(awesomeMessage);
+```
