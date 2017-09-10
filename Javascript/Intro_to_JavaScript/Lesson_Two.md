@@ -151,3 +151,67 @@ var haiku = "Blowing from the west\n" +"Fallen leaves gather"+ "\nIn the east."
 console.log(haiku);
 ```
 
+### Booleans 
+
+#### Quiz: Data Types
+* Identify which data type (Numbers, Strings, Booleans) would best represent the highlighted areas
+A - Udacity => String
+B - Meet Christian Plagemann... => String
+C - blog.udacity.com => String
+D - Whether something was "liked" or not. => Boolean
+E - 80 => Number
+
+
+#### Null, Undefined and NaN
+```sh
+"hello"/5 // NaN
+```
+
+* What will be printed out?
+```sh
+var signedIn;
+console.log(signedIn);
+// undefined
+```
+
+#### Equality
+
+Example of strongly typed programming language code
+```sh
+int count = 1;
+string name = "Julia";
+double num = 1.2932;
+float price = 2.99;
+```
+
+Equivalent code in JavaScript
+```sh
+var count = 1; 
+var name = "Julia";
+var num = 1.2932;
+var price = 2.99;
+```
+
+* What value do you think the result of "Hello" % 10 will be? 
+NaN
+
+
+```sh
+"1" == true //true
+"1" === 1 // false
+```
+
+* Check the the expressions that evaluate to true: 
+
+"3" > // true - 3 is greater than 1 (implicit type coercion)
+
+3 != "3" // false
+
+true >= 0 // true - 1 greater than or equal to 0 (implicit type coercion)
+
+-1 !== false // true - 1 does not equal false (strict equality)
+
+"false" === 0 // false
+
+3 === 3 // true - 3 equals 3 (strict equality)
+
