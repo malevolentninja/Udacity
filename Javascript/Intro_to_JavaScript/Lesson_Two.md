@@ -28,3 +28,53 @@ Determine what each expression evaluates to using the console:
 ```
 
 ### 2. Comments
+
+```sh
+// single line comment 
+
+/*
+multiple
+line comment
+*/
+```
+
+### 3. Quiz: First expression(2-1)
+
+* Write an expression that uses at least 3 different arithmetic operators
+* The expression should equal 42.
+
+console.log(7 * 3 + 23 - 2);
+
+
+### Strings 
+' ' are preferred to define literals over " ".
+
+* String concatentation
+
+What's the result with "hello" + "world"?:
+
+```sh
+"helloworld" // there was no space added into either string
+// "hello" + " world" = "hello world"
+```
+
+
+What do you think will happen when you type "Hello + 5*10"?:
+
+```sh
+"Hello + 5*10" // interpreter assumes the whole object is a string
+```
+
+What do you think will happen when you type "Hello" + 5*10?
+
+```sh
+"Hello50" // implicit type coercion - multiplies number and puts it into a string
+```
+
+
+
+
+
+
+
+
