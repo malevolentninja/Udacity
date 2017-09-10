@@ -125,3 +125,29 @@ The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains 
 "green" > "green" //false
 "green" > "Green" // true
 "Green" > "green" // false
+
+
+### Tests: 
+
+1. Create a string with the name of your favorite food. The first letter of the string should be capitalized
+```sh
+console.log("Chocolate");
+```
+
+2. Fix the right side expression so it evaluates to true: "ALL Strings are CrEaTeD equal" == "All STRINGS are CrEaTED Equal"
+```sh
+var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
+console.log(answer);
+```
+
+3. Build a string using concatenation by combining the lines from this famous haiku poem by Yosa Buson:
+
+Blowing from the west
+Fallen leaves gather
+In the east.
+* Each string should be printed on its own line
+```sh
+var haiku = "Blowing from the west\n" +"Fallen leaves gather"+ "\nIn the east."  
+console.log(haiku);
+```
+
