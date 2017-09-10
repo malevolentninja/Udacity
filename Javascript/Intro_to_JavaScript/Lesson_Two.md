@@ -72,9 +72,27 @@ What do you think will happen when you type "Hello" + 5*10?
 ```
 
 
+### Variables
 
+var totalAfterTax = 53.03; // uses camelCase if the variable name is multiple words
+var tip = 8; // uses lowercase if the variable name is one word
 
+Which of these are good variable names?
 
+```sh
+var thingy = 1; // bad - not descriptive
+var count = 1; // good - clearly describes 
+var postLiked = false; // good - camelCase and clear description
+var firstname = "Richard // bad - clear description but not camelCase
+```
+
+### Mini-Challenge: Covert Temperatures (Celsius to Fahrenheit)
+* covert Celsius to Fahrenhiet - formula: F=C×1.8+32
+* Use the equation and variables fahrenheit and celsius to print the Fahrenheit equivalent of 12°C
+
+var celsius = 12;
+var fahrenheit = celsius * 1.8 + 32; // equation here using celsius variable
+console.log(fahrenheit); //logs the outcome  53.6
 
 
 
