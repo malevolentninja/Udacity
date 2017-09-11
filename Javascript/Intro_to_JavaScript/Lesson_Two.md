@@ -116,7 +116,7 @@ The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains 
 
 * Enter each expression into the console
 * Check the ones that evaluate to true
-
+```sh
 "green" == "blue" // false
 "green" == "green" // true
 "green" == "Green // false
@@ -125,7 +125,7 @@ The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains 
 "green" > "green" //false
 "green" > "Green" // true
 "Green" > "green" // false
-
+```
 
 ### 10. Tests: 
 
