@@ -172,10 +172,6 @@ var room = "gallery";
 var suspect = "Ms. Van Cleve";
 var weapon = "";
 var solved = false;
-var room = "gallery";
-var suspect = "Ms. Van Cleve";
-var weapon = "";
-var solved = false;
 
 if (room === "dining room" && suspect === "Mr. Parkes") {
     weapon = "knife";
@@ -202,7 +198,81 @@ if(solved) {
 
 ```
 
+### Logical Operators
+
+1. What value of [BLANK] would make the following expression evaluate to false. 
+
+```sh
+!(4 === 4) && "STRing" === "STRing"
+```
+
+2. Select the operator that would make the following expression evaluate to true.
+
+```sh
+3 < -10 || "James" !== "james"
+```
+
+3. Evaluate the following logical expressions
+* Check the ones that evaluate to true.
+
+```sh
+true || false // true
+
+false && false //false
+
+!true // false
+
+(13 > -7) || (false == 0) // true
+
+(10 === "10") && (1 <= 2) // false
+
+(3 != 6 % 3) && !(24 > 45) && (!false) // true
+```
+
+### Logical AND and OR
+
+write the code to represent checking your balance at the ATM
+
+Use the following variables in your solution:
+
+balance - the account balance
+isActive - if account is active
+checkBalance - if you want to check balance
 
 
-### More Complex problems
+Print to console: 
+If checkBalance equals true and isActive equals false, then Your account is no longer active
+
+
+
+```sh
+var balance = 325.00;
+var checkBalance = true;
+var isActive = false;
+
+// your code goes here
+if (!checkBalance) {
+	console.log("Thank you. Have a nice day!");
+} else if (isActive && balance > 0) {
+	console.log("Your balance is $" + balance + ".");
+} else if (!isActive) {
+	console.log("Your account is no longer active.");
+} else if (balance === 0) {
+	console.log("Your account is empty.");
+} else if (balance < 0){
+	console.log("Your balance is negative. Please contact bank.");
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
