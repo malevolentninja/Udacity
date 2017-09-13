@@ -198,7 +198,7 @@ if(solved) {
 
 ```
 
-### Logical Operators
+### 5. Logical Operators
 
 1. What value of [BLANK] would make the following expression evaluate to false. 
 
@@ -229,7 +229,7 @@ false && false //false
 (3 != 6 % 3) && !(24 > 45) && (!false) // true
 ```
 
-### Logical AND and OR
+### 6. Logical AND and OR
 
 1. write the code to represent checking your balance at the ATM
 
@@ -250,7 +250,6 @@ var balance = 325.00;
 var checkBalance = true;
 var isActive = false;
 
-// your code goes here
 if (!checkBalance) {
 	console.log("Thank you. Have a nice day!");
 } else if (isActive && balance > 0) {
@@ -322,10 +321,47 @@ if (((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength 
 
 ```
 
+### 7. Truthy and Falsy 
 
+1. Select the truthy values from the list of values.
 
+```sh
+"null"
+-5
+```
 
+### 8. Ternary Operator
 
+1. What will be printed to the console if the following code is run?
 
+```sh
+var adult = true;
+var preorder = true;
 
+console.log("It costs $" + (adult ? "40.00" : "20.00") + 
+" to attend the concert. Pick up your tickets at the " +
+(preorder ? "will call" : "the gate") + ".");
+```
+
+A: It costs $40.00 to attend the concert. Pick your tickets at the will call.
+
+### 9. Quiz: Navigating the food chain
+
+* Write a series of ternary statements that sets the variable category equal to:
+
+* "herbivore" if an animal eats plants
+* "carnivore" if an animal eats animals
+* "omnivore" if an animal eats plants and animals
+* undefined if an animal doesn't eat plants or animals
+
+* Use the eatsPlants and eatsAnimals variables to test your code.
+
+```sh
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = (eatsPlants && eatsAnimals) ? "omnivore" : (eatsAnimals) ? "carnivore" : (eatsPlants) ? "herbivore" : undefined ;
+console.log(category);
+
+```
 
