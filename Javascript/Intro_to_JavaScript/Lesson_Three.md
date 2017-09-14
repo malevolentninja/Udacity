@@ -39,7 +39,7 @@ if (weather === "snow") {
 }
 ```
 
-1. What will be printed to the console if the following code is run?
+#### 1. What will be printed to the console if the following code is run?
 
 ```sh
 var money = 100.50;
@@ -55,7 +55,7 @@ if (money > price) {
 ```
 A: You paid the exact amount, have a nice day!
 
-2. Looking at the following code, determine what medal Kendyll received.
+#### 2. Looking at the following code, determine what medal Kendyll received.
 
 ```sh
 var runner = "Kendyll";
@@ -77,7 +77,7 @@ console.log(runner + " received a " + medal + " medal.");
 A: Kendyll received a silver mdeal
 
 ### 4. Quizzes: 
-1. Even or Odd
+#### 1. Even or Odd
 
 Make sure to test your code with different values. For example:
 
@@ -97,7 +97,7 @@ if (number % 2 === 0) {
 }
 ```
 
-2. Musical Groups
+#### 2. Musical Groups
 
 Write a series of conditional statements that:
 
@@ -132,7 +132,7 @@ else {
 }
 ```
 
-3. Murder Mystery 
+#### 3. Murder Mystery 
 
 In this murder mystery there are:
 
@@ -200,19 +200,19 @@ if(solved) {
 
 ### 5. Logical Operators
 
-1. What value of [BLANK] would make the following expression evaluate to false. 
+#### 1. What value of [BLANK] would make the following expression evaluate to false. 
 
 ```sh
 !(4 === 4) && "STRing" === "STRing"
 ```
 
-2. Select the operator that would make the following expression evaluate to true.
+#### 2. Select the operator that would make the following expression evaluate to true.
 
 ```sh
 3 < -10 || "James" !== "james"
 ```
 
-3. Evaluate the following logical expressions
+#### 3. Evaluate the following logical expressions
 * Check the ones that evaluate to true.
 
 ```sh
@@ -231,7 +231,7 @@ false && false //false
 
 ### 6. Logical AND and OR
 
-1. write the code to represent checking your balance at the ATM
+#### 1. write the code to represent checking your balance at the ATM
 
 * Use the following variables in your solution:
 
@@ -263,7 +263,7 @@ if (!checkBalance) {
 }
 ```
 
-2. Ice Cream 
+#### 2. Ice Cream 
 
 * Using logical operators, write a series of complex logical expressions 
 * prints only if the following conditions are true:
@@ -289,7 +289,7 @@ I'd like two scoops of vanilla ice cream in a cone with peanuts.
 ```
 
 
-3. What do I wear? 
+#### 3. What do I wear? 
 
 
 * Create a series of logical expressions that prints the size of a t-shirt 
@@ -323,7 +323,7 @@ if (((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength 
 
 ### 7. Truthy and Falsy 
 
-1. Select the truthy values from the list of values.
+#### 1. Select the truthy values from the list of values.
 
 ```sh
 "null"
@@ -418,7 +418,7 @@ switch (option) {
 }
 ```
 
-1. What will be the result from the following switch statement?
+#### 1. What will be the result from the following switch statement?
 
 ```sh 
 var month = 2;
@@ -473,7 +473,7 @@ console.log(output);
 ```
 
 
-1. If winner is equal to 3, then what will be output to the console?
+#### 1. If winner is equal to 3, then what will be output to the console?
 
 ```sh
 var prize = "";
@@ -494,7 +494,7 @@ A: You've won a smartwatch and tickets to the circus
 
 
 
-2. Back to School 
+#### 2. Back to School 
 
 * Write a switch statement to set the average salary of a person based on their type of completed education
 
