@@ -365,3 +365,179 @@ console.log(category);
 
 ```
 
+### 10. Switch Statement
+
+A switch statement is an another way to chain multiple else if statements 
+that are based on the same value without using conditional statements.
+Instead, you just switch which piece of code is executed based on a value.
+
+```sh
+switch (option) {
+  case 1:
+    console.log("You selected option 1.");
+  case 2:
+    console.log("You selected option 2.");
+  case 3:
+    console.log("You selected option 3.");
+  case 4:
+    console.log("You selected option 4.");
+  case 5:
+    console.log("You selected option 5.");
+  case 6:
+    console.log("You selected option 6.");
+}
+
+```
+#### Break Statement
+used to terminate a switch statement and transfer control to the code following the terminated statement. 
+By adding a break to each case clause, 
+you fix the issue of the switch statement falling-through to other case clauses.
+
+```sh
+var option = 3;
+
+switch (option) {
+  case 1:
+    console.log("You selected option 1.");
+    break;
+  case 2:
+    console.log("You selected option 2.");
+    break;
+  case 3:
+    console.log("You selected option 3.");
+    break;
+  case 4:
+    console.log("You selected option 4.");
+    break;
+  case 5:
+    console.log("You selected option 5.");
+    break;
+  case 6:
+    console.log("You selected option 6.");
+    break; // technically, not needed
+}
+```
+
+1. What will be the result from the following switch statement?
+
+```sh 
+var month = 2;
+
+switch(month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    days = 31;
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    days = 30;
+    break;
+  case 2:
+    days = 28;
+}
+
+console.log("There are " + days + " days in this month.");
+```
+A: There are 28 days in this month
+
+
+#### Falling through
+* In some situations,
+you might want to leverage the "falling-through" behavior of switch statements to your advantage.
+
+* For example, when your code follows a hierarchical-type structure.
+
+```sh
+var tier = "nsfw deck";
+var output = "You’ll receive "
+
+switch (tier) {
+  case "deck of legends":
+    output += "a custom card, ";
+  case "collector's deck":
+    output += "a signed version of the Exploding Kittens deck, ";
+  case "nsfw deck":
+    output += "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
+  default:
+    output += "one copy of the Exploding Kittens card game.";
+}
+
+console.log(output);
+```
+
+
+1. If winner is equal to 3, then what will be output to the console?
+
+```sh
+var prize = "";
+var winner = 3;
+switch (winner) {
+  case 1:
+    prize += "a trip for two to the Bahamas and ";
+  case 2:
+    prize += "a four piece furniture set.";
+    break;
+  case 3:
+    prize += "a smartwatch and ";
+  default:
+    prize += "tickets to the circus.";
+}
+```
+A: You've won a smartwatch and tickets to the circus
+
+
+
+2. Back to School 
+
+* Write a switch statement to set the average salary of a person based on their type of completed education
+
+* Afterwards, print the following to the console:
+
+"In 2015, a person with __________ earned an average of __________/year."
+
+```sh
+var salary;
+
+// your code goes here
+switch  (education) {
+    case "no high school diploma":
+        salary="$25,636/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "a high school diploma":
+        salary="$35,256/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "an Associate's degree":
+        salary="$41,496/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "a Bachelor's degree":
+        salary="$59,124/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "a Master's degree":
+        salary="$69,732/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "a Professional degree":
+        salary="$89,960/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    case "a Doctoral degree":
+        salary="$84,396/year";
+        console.log("In 2015, a person with " +  education + " earned an average of " + salary.toLocaleString("en-US") + ".");
+        break;
+    default:
+        console.log ("nothing");
+        break;
+}
+```
+
