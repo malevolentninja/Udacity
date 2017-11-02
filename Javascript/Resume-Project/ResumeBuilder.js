@@ -1,23 +1,18 @@
-var bio = {};
-    "name" : "Olivia",
-     "age" : 22,
-    "role" : "Newbie Web Developer",
-  
-    "contact": {
-        "mobile" : 
-        "email": 
-        "github" : 
-        "twitter" : 
-        "location" : ["Exeter ," "London" ]   
-      
-},
-
-
-"welcomeMessage" : "Welcome to my portfolio".
-"Skills" : ["awesomeness", "programming", "Html", "CSS", "Js" ],
-    "bioPic" : "images/me.png"
-
-}
+var bio {
+    "name": "Olivia Boertje",
+    "role": "Aspiring Developer", 
+    "contacts": {
+       "mobile": "1234 1234 123",
+       "email" : "blondie@example.com",
+       "github": "malevolentninja",
+       "twitter": "@Olivia_Boertje",
+       "location": "London"
+    },
+    "welcomeMessage" : "Thankyou for visting my page, enjoy looking around!",
+    "skills": [
+    "HTML5", "CSS/SCSS", "Gulp", "JavaScript" , "jQuery", "Git", "NodeJS" ,"Ruby", "Kitesurfing", "Shaolin Kung Fu", "Tai Chi", "Wing Chun", "Yoga" "Playing the Oboe and Clarinet"],
+    "bioPic": "images/me.jpg"
+};
 
 
                        
@@ -60,9 +55,16 @@ var work = {
 	{
 	work.position = "Education Catalyst Project Coordinator";
 	work.employer = "Exeter University";
-	work.years = 0.4;
-	work.dates = "7th 'January -   2017";
-	work.description  = " " ; 
+	work.years = 0.6;
+	work.dates = "7th 'January -  7th July 2017";
+	work.description  = [{ "A critical review of course modules in accordance with the university's education strategy. " 
+	"▪ Trained to conduct focus groups, edit ELE pages and project management course"  
+	"▪ Collaborating with a range of stakeholders " 
+        "▪ Writing agendas, minutes and chairing meetings" 
+	"▪ Working with and managing a team"
+	"▪ Utilising Microsoft Office tools"
+	"▪ Organised events and organised the production of our webpage on the University website."	
+}]; 
 	
 },
 	
@@ -73,10 +75,13 @@ var work = {
 work.dates = "4th October 2016 - 5th January 2017"
     work.description = 
         "This role involves helping customers find products, ensure the shops standards are well amaintained(e.g. neat, full shelves) "
-    "have good knowledge of beers, wines, spirits and other drinks to help the customer make an informed decision about the products they wish to purchase."
+    "Needed to have good knowledge of beers, wines, spirits and other drinks to help the customer make an informed decision about the products they wish to purchase."
 
 },
-
+    
+    ]
+    
+/*
  {
     "position" : "example";
     "employer" : "N/a";
@@ -85,8 +90,7 @@ work.dates = "4th October 2016 - 5th January 2017"
     "description" = "blah blah"
 
  }
-
- ]
+*/
 
 },
 
