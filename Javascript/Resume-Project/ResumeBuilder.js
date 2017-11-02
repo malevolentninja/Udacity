@@ -1,21 +1,50 @@
+/* ------------------------------------------------BIO JSON object ----------------------------------------------*/
 var bio {
-    "name": "Olivia Boertje",
-    "role": "Aspiring Developer", 
-    "contacts": {
-       "email" : "malevolentninja@gmail.com",
-       "github": "malevolentninja",
-       "twitter": "@Olivia_Boertje",
-       "location": "London"
-                  },
-    "welcomeMessage" : "Thankyou for visting my page, enjoy looking around!",
-    "skills": [
-    "HTML5", "CSS/SCSS", "Gulp", "JavaScript" , "jQuery", "Git", "NodeJS" ,"Ruby"],
-    "interests": [ "Kitesurfing", "Shaolin Kung Fu", "Tai Chi", "Wing Chun", "Yoga" "Playing the Oboe and Clarinet"],
-    "bioPic": "images/me.jpg"
-};
+            "name": "Olivia Boertje",
+            "role": "Aspiring Developer", 
+            "contacts": {
+               "email" : "malevolentninja@gmail.com",
+               "github": "malevolentninja",
+               "twitter": "@Olivia_Boertje",
+               "LinkedIn": "https://www.linkedin.com/in/oliviaboertje/",
+               "website": " ",
+               "location": "London"
+         },
+            "welcomeMessage" : "Thankyou for visting my page, enjoy looking around!",
+            "skills": ["HTML5", "CSS/SCSS", "Gulp", "JavaScript" , "jQuery", "Git", "NodeJS", "Bootstrap","MongoDB", "SQL", "ElasticSearch" "Ruby"],
+            "interests": [ "block chain and cryptocurrency", "Kitesurfing", "Shaolin Kung Fu", "Tai Chi", "Wing Chun", "Yoga" "Playing the Oboe and Clarinet"],
+            "bioPic": "images/me.jpg"
+         };
 
+                             /*   bio  display  function */
+var displayBio = function() {
+    var formattedName = HTMLheaderName.replace("%data%", bio.name);
+    var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var formattedLinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedIn);
+    var formattedBiopic = HTMLbioPic.replace("%data%", bio.bioPic);
+    var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
+    $("#topContacts, #footerContacts").append(formattedEmail);
+    $("#topContacts, #footerContacts").append(formattedGithub);
+    $("#topContacts, #footerContacts").append(formattedTwitter);
+    $("#topContacts, #footerContacts").append(formattedLinkedin);
+    $("#header").append(formattedBiopic);
+    $("#header").append(formattedWelcome);
+    if (bio.skills.length > 0) {
+        $("#header").append(HTMLskillsStart);
+        for (var i in bio.skills) {
+            var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
+            $("#header").append(formattedSkills);
+        }
+    }
+}
+displayBio();
 
-                       
+/* ----------------------------------------EDUCATION  JSON object -------------------------------------------------------------*/
 var education = {
    "schools": [
         {
@@ -88,6 +117,65 @@ var education = {
                 ],
 };
 
+                                    /*  display education function */
+
+var displayEducation = function(){
+    for (i in education.schools){
+        $("#education").append(HTMLschoolStart);    
+        
+            var formattedSchoolsName = HTMLschoolName.replace("%data%", education.schools[i].name);
+            var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
+            var formattedDates = HTMLschoolDates.replace("%data%", education.schools[i].gradDate);
+            var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
+            var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
+            $(".education-entry:last").append(formattedSchoolsName);
+            $(".education-entry:last").append(formattedDates);
+            $(".education-entry:last").append(formattedDegree);
+            $(".education-entry:last").prepend(formattedLocation);
+            $(".education-entry:last").append(formattedMajor);   
+        }
+ $("#education").append(HTMLonlineClasses);
+	for (i in education.onlineCourses){ 
+       
+            $("#education").append(HTMLschoolStart);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].name);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].date);
+            
+            $(".education-entry:last").append(formattedOnlineTitle);
+            $(".education-entry:last").append(formattedOnlineSchool);
+            $(".education-entry:last").append(formattedOnlineDates);
+        }
+        
+}
+
+displayEducation();
+
+
+
+
+
+
+
+/*  -------------------------------------------  WORK JSON object------------------------------------------------------------*/
+
+/*
+array of objects: 
+var work = { 
+	"jobs": [ {object1/job1}, {object2/job2}, {object3/job3}]
+}
+
+ {
+    "position" : "example";
+    "employer" : "N/a";
+    "years" = 0.3;
+    "dates" = "4th October..."
+    "description" = "blah blah"
+
+ }
+*/
+
+*/
 
 var work = {
 
@@ -122,81 +210,117 @@ var work = {
            },
     ];
     
-/*
- {
-    "position" : "example";
-    "employer" : "N/a";
-    "years" = 0.3;
-    "dates" = "4th October..."
-    "description" = "blah blah"
-
- }
-*/
 
 
+                                        /* displayWork()  function */
 
+function displayWork() {
+    for (job in work.jobs) {
+        // create new div for work experience
+        $("#workExperience").append(HTMLworkStart);
+        // concate employer and title
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedEmployerTitle = formattedEmployer + formattedTitle;
+        $(".work-entry:last").append(formattedEmployerTitle);
+
+        var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+        $(".work-entry:last").append(formattedLocation);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+        $(".work-entry:last").append(formattedDates);
+        if (work.jobs[job].Description.length > 0) {
+            for (var i in work.jobs[job].Description) {
+                var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].Description[i]);
+                $(".work-entry:last").append(formattedDescription);
+            }
+        }
+    }
+}
+
+displayWork();
+
+/* ---------------------------------------------PROJECT  JSON object ----------------------------------------------*/
 	
 var projects = {
+
     "projects" : [
         {
             "title": "My First Website"
             "dates" : "2016"
-            "description" : "This website uses the basic forms of html and css to design a simple webpage."
-
+            "description" : ["This website uses the basic forms of html and css to design a simple webpage."]           
             "images" : [
                 "https://unsplash.it/g/200/300",
                 "https://unsplash.it/g/200/300"
-
             ]
-}
-
-]
-},
-
-
-{
+         },
+         {
             "title": "My First portfolio page"
             "dates" : "2016"
-            "description" : "This websit html , css and js."
-
+            "description" : ["This website consists of html , css and js."]
             "images" : [
                 "https://unsplash.it/200/300/?random",
                 "https://unsplash.it/200/300/?random"
-
-            ]
-}
-
-]
-},
-
-	{ 
-		"title": " "
+             ]
+         },
+         { 
+            "title": " "
             "dates" : "2017"
             "description" : "This websit used "
-
             "images" : [
                 "https://unsplash.it/200/300/?random",
                 "https://unsplash.it/200/300/?random"
-		]
-		
-	}, 
-
-{
+             ]
+         }, 
+         {
             "title": "My Resume"
             "dates" : "2017"
             "description" : "Harnesses Javascript to make an advanced portfolio page."
-
             "images" : [
                 "https://unsplash.it/200",
                 "https://unsplash.it/200"
-
             ]
-}
-
-]
+         },
+       ]
 },
 	
-//Bio
+	
+	
+                                /* projects.display */
+
+
+
+projects.display = function() {
+    // display code goes here
+    for (project in projects.projects) {
+        $("#projects").append(HTMLprojectStart);
+
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        $(".project-entry:last").append(formattedTitle);
+
+        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+        $(".project-entry:last").append(formattedDates);
+
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].Description);
+        $(".project-entry:last").append(formattedDescription);
+        if (projects.projects[project].images.length > 0) {
+            for (image in projects.projects[project].images) {
+                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+                $(".project-entry:last").append(formattedImage);
+                console.log(image);
+                console.log(projects.projects[project].images[image]);
+            }
+        }
+    }
+}
+projects.display();
+
+
+/* MAP
+-----------------------------------*/
+$("#mapDiv").append(googleMap);
+
+	
+/* Bio
 bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -285,4 +409,4 @@ function inName(name) {
 
 $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
-
+*/
