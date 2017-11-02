@@ -3,6 +3,8 @@
 A resume project work through with the udacity course. 
 Involves creating an interactive map and using a mixture of vanilla javaScript and jQuery to add different sections.
 
+Brief : Read resume content from a JSON file and displays content.
+
 [Project Rubric](https://review.udacity.com/#!/rubrics/13/view). I will need to ensure my project work is inline with this. 
 
 ### Getting Started 
