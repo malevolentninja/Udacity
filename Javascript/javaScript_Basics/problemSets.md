@@ -48,7 +48,7 @@ var charEscape = function(_html) {
 };
 ```
 
-#### Third Challenge: Dot Notation vs Bracket Notation
+#### Third Challenge: Dot Notation vs Bracket Notation
 Bracket notation always works. 
 
 ```sh property ```
