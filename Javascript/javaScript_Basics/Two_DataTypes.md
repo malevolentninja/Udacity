@@ -233,14 +233,143 @@ var bio {
 
 ### 16. Dot and Bracket Notation
 
+Dot Notation: declare an object and then define its properties outside the brackets.
+```sh
+var bio = {
+     "name": "Olivia",
+     "age": 23,
+     "skills": skills
+};
+
+$(#main").append(bio.name);
+
+bio.city = "London";
+bio.email = "blondie@example.com";
+```
+
+Bracket Notation:
+```sh
+var bio = {
+     "name": "Olivia",
+     "age": 23,
+     "skills": skills
+};
+
+$(#main").append(bio.city);
+
+bio ["city"] = "London";
+bio ["email"] = "blondie@example.com";
+```
+
 ### 17. Quiz: Practice with objects
+- create a work object with properties defining current job position, employer, years worked and the city. 
+- Create an Education object with the properties defining the name of the last school you atteneded, the years you attened and the school's city using bracket notation. 
+- .append() work["position"] and education.name to the resume
+```sh
+var work = {};
+work.position = "Aspiring Developer";
+work.employer = "...";
+work.years = 1.0;
+
+var education = {};
+education["name"] = "Free Code Camp ";
+education["years"] = "2016-2017";
+education["city"] = "Exeter, London";
+
+$("#main").append(work["position"]);
+$("#main").append(education.name);
+
+```
 
 ### 18. A note about JSON
+JSON is JavaScript Object Notation which does not permit the inclusion of functions.
+The resume project usese javaScript Object Literals to define objects which permits the inclusion of functions as properties
 
 ### 19. JSON
+```sh
+var education = {
+  "schools": [
+   // Object 0
+   {
+ 
+     "name" :"Free Code Camp Certifications", 
+     "years": "2016-2017",
+     "city" :"Exeter, London",
+     "major" : ["Front-End", "Back-end", "Data Visualisation" ]
+   },
+   //Object 1
+   { 
+     "name" : "BA Geography",
+     "years" : "2013-2016",
+     "city": "Exeter" 
+   
+   },
+  ]
+
+};
+```
 
 ### 20. Validating JSON
 
+No code. 
+
 ### 21. Quiz: Validating JSON Quiz
+- check if the eucation section validates
+
+Answer: Yes.
+
 
 ### 22. Quiz: All the Resume Sections
+- Now complete the following sections of the resume and compile. 
+
+Resume Sections:
+#### work:
+- work contains an array of jobs.
+- Each object in the jobs array should contain;
+    - an employer
+    - title
+    - location 
+    - dates worked
+    - description strings
+
+#### projects
+- projects contains an array of projects. 
+- Each object in the projects array should contain;
+     - title
+     - dates 
+     - description strings, 
+     - an images array with URL strings for project images
+
+#### bio
+- bio contains; 
+     - name
+     - role
+     - welcomeMessage,
+     - biopic strings
+     - contacts object
+     - skills array of skill strings.
+- The contacts object should contain; 
+     - a mobile number, 
+     - email address, 
+      - github username, 
+      - twitter handle
+      - location. 
+      - The twitter property is optional.
+
+#### education
+- education contains an array of schools. 
+- Each object in the schools array contains;
+     - name, 
+     - location, 
+     - degree dates
+     - url strings
+     - a majors array of major strings
+
+- education also contains; 
+     - an onlineCourses array. 
+- Each object in the onlineCourses array should contain
+     - a title, 
+     - school, 
+     - dates 
+     - url strings
+
