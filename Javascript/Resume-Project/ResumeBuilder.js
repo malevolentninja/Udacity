@@ -3,11 +3,11 @@ var bio {
     "role": "Aspiring Developer", 
     "contacts": {
        "mobile": "1234 1234 123",
-       "email" : "blondie@example.com",
+       "email" : "malevolentninja@gmail.c",
        "github": "malevolentninja",
        "twitter": "@Olivia_Boertje",
        "location": "London"
-    },
+                  },
     "welcomeMessage" : "Thankyou for visting my page, enjoy looking around!",
     "skills": [
     "HTML5", "CSS/SCSS", "Gulp", "JavaScript" , "jQuery", "Git", "NodeJS" ,"Ruby", "Kitesurfing", "Shaolin Kung Fu", "Tai Chi", "Wing Chun", "Yoga" "Playing the Oboe and Clarinet"],
@@ -17,34 +17,75 @@ var bio {
 
                        
 var education = {
-    "schools": [
-
-	{
-
-		"name": "Mill Hill",
-		"years": 2011 - 2013,
-		"city": "London",
-		"certifications": " A Levels",
-		"details": ["A* Geography , "
-			"A Politics , "
-			"B History"
-
-		],
-
-		"name": "Exeter University",
-		"years": 2013 - 2016,
-		"city": "Exeter",
-		"degree": "BA Geography",
-
-	}
+   "schools": [
+        {
+             "name": "Free Code Camp",
+             "years": "2016-2018",
+             "Certifications": ["Front-end", "Back-end", "Data-Visualization"],
+             "details": [" Front-end = HTMl, CSS and JavaScript, Algorithms and Projects ", 
+             "Data-Visualisation = SASS, React, D3.js, General notes", 
+             "Back-end = Automated Testing and debugging in the console, Node.js, Express.js, Git, MongoDB, API Projects and Dynamic Web Application Projects", "Additonal: nonprofit project assistance"],
+        },
+        {
+            "name": "Exeter University",
+            "years": "2013 - 2016",
+            "city": "Exeter",
+            "degree": "BA Geography",
+            "Acitvites and Societies": [ "Windriders", "Kung Fu Society", "Ladies Football Club", "Student Ambassador of the Royal Geographical Society"],
+        },
+        {
+            "name": "Mill Hill",
+            "years": "2011 - 2013",
+            "city": "London",
+            "certifications": " A Levels",
+            "details": ["A* Geography","A Politics", "B History"] 
+        }, 
 ],
-"onlineCourses": [
-	{
-	"title": "Javascript Syntax",
-	"Schools": "Udacity",
-	"Dates": 2016,
-	"url": "https://www.udacity.com/course/javascript-basics--ud804"
-}]
+"onlineCourses":[
+                {
+                     "title": "Javascript Syntax",
+                     "School": "Udacity",
+                     "Date": "2016",
+                     "url": "https://www.udacity.com/course/javascript-basics--ud804"
+                },
+                {
+                     "title": "Javascript Basics",
+                     "School": "Udacity",
+                     "Complete": "November 2017",
+                     "url": "https://github.com/malevolentninja/Udacity/tree/master/Javascript/javaScript_Basics"
+                },
+                {
+                     "title": "Javascript RoadTrip Part One",
+                     "School": "CodeSchool",
+                     "Complete": "November 2017",
+                     "url": ""
+
+                },
+                {
+                     "title": "CoffeScript",
+                     "School": "CodeSchool",
+                     "Complete": "August 2017",
+                     "url": "https://github.com/malevolentninja/codeSchool/tree/master/CoffeeScript"
+                },
+                {
+                     "title": "Magical Marvels MongoDB",
+                     "School": "CodeSchool",
+                     "Complete": "August 2017",
+                     "url": "https://github.com/malevolentninja/codeSchool/tree/master/MongoDB",
+                },
+                {
+                     "title": "Ruby Bits One",
+                     "School": "CodeSchool",
+                     "Complete": "August 2017",
+                     "url": ""
+                },
+                {
+                     "title": "Ruby Bits Two",
+                     "School": "CodeSchool",
+                     "Complete": "August 2017",
+                     "url": ""
+                },
+                ],
 };
 
 
