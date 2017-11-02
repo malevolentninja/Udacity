@@ -7,6 +7,7 @@ This will help me become a better developer and learn more about programming.
 
 ## 1. Front-end Nano degree 
 Taking the structure and using it for my own development. 
+
 ### Part 1
 * Intro to HTML and CSS
 * Responsive Web Design Fundamentals
@@ -14,9 +15,9 @@ Taking the structure and using it for my own development.
 * Project: Build a portolio site -> Brief: design mockup in pdf, replicate using Html and CSS
 
 ### Part 2
-* JavaScript Basics
+* [JavaScript Basics](https://github.com/malevolentninja/Udacity/tree/master/Javascript/javaScript_Basics)
 * Intro to jQuery
-* Project: Interactive Resume -> Read resume contetn from a JSON file and displays content
+* [Project: Interactive Resume](https://github.com/malevolentninja/Udacity/tree/master/Javascript/Resume-Project) 
 
 ### Part 3
 * Object-Orientated JavaScript
@@ -37,8 +38,8 @@ Taking the structure and using it for my own development.
 * JavaScript Testing 
 * Project: Feed Reader Testing -> web-based application that reads RSS feeds, 
 
-
-## 2. Java
+## Other Courses:
+### 2. Java
 * Introduction to Java Programming
 * Introduction to Java: Functional Programming
 
@@ -46,7 +47,7 @@ Taking the structure and using it for my own development.
 * Writing READMEs [Complete]
 
 ### 4. JavaScript
-* Intro to JavaScript
+* [Intro to JavaScript](https://github.com/malevolentninja/Udacity/tree/master/Javascript/Intro_to_JavaScript)
 
 
 ### 5. Foundations/ Extras
