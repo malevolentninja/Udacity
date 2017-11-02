@@ -184,13 +184,80 @@ x /= 5 // same as x = x / 5
 
 ### 11. Quiz: Changing the Loop (4-4)
 
-### 12. Quiz: Fix the Error 1 (4-5)
+```sh
+var x = 9;
+while (x >= 1) {
+  console.log("hello " + x);
+  x = x - 1;
+}
+```
+Re-write the while loop into a for loop
+```sh
+for(var x=9; x>=1; x=x-1)  {
+    console.log("hello " + x);
+}
 
+```
+### 12. Quiz: Fix the Error 1 (4-5)
+Here is a for loop that's supposed to print the numbers 5 through 9. Fix the error!
+```sh
+for (x < 10; x++) {
+  console.log(x);
+}
+```
+
+fixed: 
+```sh
+for (var x=5; x < 10; x++) {
+    console.log(x);
+}
+```
 
 ### 13. Quiz: Fix the Error 2 (4-6)
+The for loop below has an error. Fix it!
+```sh
+for (var k = 0 k < 200 k++) {
+  console.log(k);
+}
+```
+fixed: 
+```sh
+for (var k = 0; k < 200; k++) {
+    console.log(k);
+}
+```
 
 ### 14. Quiz: Factorials! (4-7)
+- Write a for loop that prints out the factorial of the number 12.
+- A factorial is calculated by multiplying a number by all the numbers below it. For instance, 3! or "3 factorial" is 3 * 2 * 1 = 6
+
+```sh
+var solution=1;
+for( var x=1;x<=12;x++)
+{
+    solution=solution*x;
+
+}
+console.log(solution);
+```
 
 ### 15. Quiz: Find my Seat (4-8)
+- Theater seats often display a row and seat number to help theatergoers find their seats.
+- If there are 26 rows (0 to 25) and 100 seats (0 to 99) in each row, write a nested for
+- loop to print out all of the different seat combinations in the theater.
+Things to note: 
+ * the row and seat numbers start at 0, not 1
+ * the highest seat number is 99, not 100
+
+```sh
+var row;
+var seat;
+for (row = 0; row <= 25; row++){
+for (seat = 0; seat <= 99; seat++){
+console.log(row + "-" + seat);
+}
+}
+```
 
 ### 16. Lesson 4 summary
+No code
