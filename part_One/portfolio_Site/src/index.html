@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-        <title> Portfolio MockUp </title>
-      <meta name="description" content="Mockup from a pdf portfolio.">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    </head>
+    <meta name="description" content="Mockup from a pdf portfolio.">
+    <meta name="keywords" content="portfolio, oliviaboertje, HTML, CSS, JS, JavaScript, frontend, web development">
+    <meta name="author" content="Olivia Boertje">
+    
+    <title> Portfolio MockUp </title>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
     <body>
+      <div class="container">
         <header class="col-6">
-            <h1> Malevolentninja </h1>
-            <h3> Front-end Ninja </h3>
+          <img src="img/me.jpg" class="profile-avatar img-circle img-responsive" alt="Olivia Boertje Picture">
+            <h1 class = "profile-name text-thin"> Olivia Boertje </h1>
+            <h3 class="profile-job"> Front-end Ninja </h3>
         </header>
 
         <section class="grid">
@@ -25,14 +37,22 @@
 
                 </div>
             </div>
-
+        </section>
+        
+         <main class="row">
+      <div class="col-md-12">
+        <h2 class="project-featured">Featured Work</h2>
+      </div>
+      <article class="project app">
             <div class="row">
                 <div class="col-4"> <img src="http://placekitten.com/300/200">
                         <h3> Appify </h3>
                         <p> <a href="http://github.com"> Link to Project </a></p>
 
                 </div>
-
+              </article>
+        <article>
+          
 
                 <div class="col-4"> <img src="http://placehold.it/300x200">
                         <h3> Appify </h3>
@@ -40,7 +60,7 @@
 
                 </div>
             </div>
-
+           </article>
             <div class="row">
                 <div class="col-4"> 4 Columns </div>
 
@@ -50,8 +70,10 @@
                 <div class="col-3"> 3 columns </div>
                 
                 </div>
-                </section>  
-                <footer> </footer>    
+             
+                <footer class="col-md-12> 
+                    <p> Made by <a href="https://github.com/malevolentninja" target="_blank">Olivia Boertje </a> </p>
+                  </footer>    
     </body>
 
 
