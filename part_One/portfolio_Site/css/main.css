@@ -6,14 +6,14 @@ h1 {
 * {
     border: 1px solid red !important;
     font-family: 'Handlee', cursive;
-
-}
-
-* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+header {
+        text-align:right;
 }
 
 @media only screen and (max-width: 300px) {
