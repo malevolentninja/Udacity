@@ -26,13 +26,14 @@ JavaScript
 
 #### Notes : 
 Potential room for further advancement and complexity by incorporating these additional features:
-- CSS precompiler to be used
+- CSS precompiler to be used (SCSS or SASS)
 - backend setup (incorporate Nodejs and Gulp?)
 - database to store the information 
 - navbar
 - RSS/Twitter
 - Bootstrap
 - polymer components
+- alternative form of deployment: Heroku
 
 ### Acknowledgements
 
