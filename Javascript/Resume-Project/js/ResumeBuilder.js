@@ -151,12 +151,6 @@ var displayEducation = function(){
 
 displayEducation();
 
-
-
-
-
-
-
 /*  -------------------------------------------  WORK JSON object------------------------------------------------------------*/
 
 /*
@@ -315,11 +309,29 @@ projects.display = function() {
 projects.display();
 
 
-/* MAP
------------------------------------*/
+/*---------MAP---------------*/
 $("#mapDiv").append(googleMap);
 
-	
+
+
+/*-----navigation menu--- */
+
+menu.display = function () {
+    'use strict';
+    var i=0, entry="", toptitle="", y=0;
+    $("nav").append("<ul id=\"navmenu\">");
+    //alert(menu.menu.length);
+    for (i=0; i<menu.menu.length; i=i+1) {
+       //alert(menu.menu[i].type);
+       entry = '<li><a href="'+menu.menu[i].link+'">'+menu.menu[i].title+'</a></li>';
+          // console.log(entry);
+          $("#navmenu:last").append(entry);
+    }
+};
+
+
+/* To sort out or remove ------ */
+
 /* Bio
 bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
