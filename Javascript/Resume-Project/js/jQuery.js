@@ -11,6 +11,16 @@
  * Date: 2013-07-03T13:30Z
  */
 
+    
+   $(document).ready(function() {
+  $('button').click(function() {
+    var $name = $('#name');
+    var iName = inName($name.text()) || function(){};
+    $name.html(iName);
+  });
+});
+
+
 $("#header").append([Olivia]);
 
 
