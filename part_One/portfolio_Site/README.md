@@ -7,21 +7,21 @@ Brief: Use the mockup to create a website
 
 ## Getting Started
 
-Text Editor , HTML, CSS
+Text Editor , HTML, CSS, Bootstrap
 
 ## Deployment:
 
 ### Techology and Frameworks used:
 - HTML5
 - CSS
+- Bootstrap 4
 
 ### Notes
 Potential room for further advancement and complexity by incorporating these additional features:
 
-- CSS precompiler to be used
+- CSS precompiler to be used?
 - backend setup (incorporate Nodejs and Gulp/Grunt?)
 - navbar
-- Bootstrap
 - polymer components
 - Accesssbility 
 
