@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mockup from portfolio for Udacity.">
+    <meta name="keywords" content="Udacity,portfolio, oliviaboertje, HTML, CSS, Bootstrap, JavaScript, frontend, web development">
+    <meta name="author" content="Olivia Boertje">
+
+    <title> Portfolio Mock-up </title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <header class="banner">
+                <img class="img-responsive logo" src="./img/thumbnail_initials.jpg" width="100" height="100" alt="thumbnail OB">
+                <h1 class="myName">Olivia Boertje</h1>
+                <h4 class="headings" id="tagline">Front-End Ninja</h4>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <img class="img-responsive" src="" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="">
+                <h3 class="headings" id="about">About</h3>
+                <p></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="images/interactive-resume_small.jpg" alt="Interactive Resume Screenshot" data-toggle="modal" data-target=".resume-modal">
+                <h3 class="headings" id="project-2">Interactive Resume</h3>
+                <p><a href="">Preview Project</a>
+                </p>
+                <p><a href="">Source Code</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="" alt="Arcade Game Screenshot" data-toggle="modal" data-target=".game-modal">
+                <h3 class="headings" id="project-3">Arcade Game</h3>
+                <p><a href="">Preview Project</a>
+                </p>
+                <p><a href="">Source Code</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="" alt="Website Optimization Screenshot" data-toggle="modal" data-target=".optimize-modal" id="project-4">
+                <h3>Website Optimization</h3>
+                <p><a href="">Preview Project</a>
+                </p>
+                <p><a href="">Source Code</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="" alt="Neighbourhood Map Screenshot" data-toggle="modal" data-target=".map-modal" id="project-5">
+                <h4 class="headings">Neighbourhood Map</h4>
+                <p><a href="">Preview Project</a>
+                </p>
+                <p><a href="">Source Code</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <img class="portfolio-img img-responsive" src="" alt="Feedreader Testing Screenshot" data-toggle="modal" data-target=".testing-modal" id="project-6">
+                <h4 class="headings">Feedreader Testing</h4>
+                <p class="preview"><a href="">Preview Project</a>
+                </p>
+                <p><a href="">Source Code</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- About Modal -->
+        <div class="modal fade about-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title heading"> About</h4>
+                        <hr>
+                        <div class="modal-body">
+                            <article class="skills"> <h2>Skills</h2>
+                                <p>Tech Enthusiast with some skills. </p>
+                                <ul>
+                                    <li> HTML5</li>
+                                    <li> CSS, SASS</li>
+                                    <li> JavaScript</li>
+                                    <li> jQuery, Angular</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Resume Modal -->
+        <div class="modal fade resume-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title heading">Interactive Curriculum Vitae</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="portfolio-img img-responsive" src="" alt="Interactive Curriculum Vitae">
+                        <hr>
+                        <p>This project is the second project of the Udacity Front-end Nonodegree Program. </p>
+                        <p> My Curriculum Vitae project was built using a javascript helper to layout the structure of the page.</p>
+                        <p class="preview"><a href="">Preview Project</a>
+                        </p>
+                        <p><a href="">Source Code</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arcade Game Modal -->
+        <div class="modal fade game-modal" tabindex="-1" role="dialog" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title heading">Arcade Game</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="portfolio-img img-responsive" src="" alt="Arcade Game Screenshot">
+                        <hr>
+                        <p>This is a difficult version of the classic arcade game Frogger.</p>
+                        <p class="preview"><a href="">Preview Project</a>
+                        </p>
+                        <p><a href="">Source Code</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Website Optimization Modal -->
+        <div class="modal fade optimize-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title headings" id="project-4">Website Optimization</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="portfolio-img img-responsive" src="http://placehold.it/300x200" alt="Website Optimization Screenshot">
+                        <hr>
+                        <p>The purpose of this project is to take a site that loads very poorly and optimize it to over 60 frames per second.</p>
+                        <p class="preview"><a href="">Preview Project</a>
+                        </p>
+                        <p><a href="">Source Code</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neighborhood Map Modal -->
+        <div class="modal fade map-modal" tabindex="-1" role="dialog" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title headings">Neighbourhood Map</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="portfolio-img img-responsive" src="" alt="">
+                        <hr>
+                        <p class="preview"><a href="">Preview Project</a>
+                        </p>
+                        <p><a href="">Source Code</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedreader Testing Modal -->
+        <div class="modal fade testing-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title headings">Feedreader Testing</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="portfolio-img img-responsive" src="" alt="Feedreader Testing Screenshot">
+                        <hr>
+                        <p>This project uses jasmine to test the functionality of a feed reader website.</p>
+                        <p class="preview"><a href="">Preview Project</a>
+                        </p>
+                        <p><a href="">Source Code</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr>
+        <p class="text-muted text-center">To view more of my work visit my github <a href="https://github.com/malevolentninja"> here :)</a>
+        </p>
+    </footer>
+</body>
+
+</html>
