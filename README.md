@@ -17,7 +17,7 @@ Taking the structure and using it for my own development.
 ### Part 2
 * [JavaScript Basics](https://github.com/malevolentninja/Udacity/tree/master/Javascript/javaScript_Basics)
 * Intro to jQuery
-* [Project: Interactive Resume](https://github.com/malevolentninja/Udacity/tree/master/Javascript/Resume-Project) 
+* [Project: Interactive Resume](https://github.com/malevolentninja/udacity/tree/master/resume_CV) 
 
 ### Part 3
 * Object-Orientated JavaScript
@@ -26,7 +26,7 @@ Taking the structure and using it for my own development.
 ### Part 4
 
 * Browser Rendering Optimization
-* Website Perfromance Optimization
+* Website Performance Optimization
 * Project: Website Optimization -> optimise a provided websiet with a number of optimization and perfromance related issues so that it achieves a target PageSpeed score and runs at 60fps.
 
 ### Part 5
@@ -44,16 +44,15 @@ Taking the structure and using it for my own development.
 * Introduction to Java: Functional Programming
 
 ### 3. Markdown 
-* Writing READMEs [Complete]
+* Writing READMEs - Complete
 
 ### 4. JavaScript
-* [Intro to JavaScript](https://github.com/malevolentninja/Udacity/tree/master/Javascript/Intro_to_JavaScript)
+* [Intro to JavaScript](https://github.com/malevolentninja/udacity/tree/master/Javascript/Intro_to_JavaScript)
 
 
 ### 5. Foundations/ Extras
 * Web Development
 * Deploying web applications Heroku
-* Make your own 2048
 * web tooling and Automation
 * Full Stack Foundations
 * Offline Web applications
@@ -65,8 +64,3 @@ Taking the structure and using it for my own development.
 * Android Basics: Data Storage
 * UX Design for Mobile Developers
 * Intro to point and click app development
-
-
-### Projects:
-- A Resume
-- convert HTML page to Markdown
