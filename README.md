@@ -12,7 +12,7 @@ Taking the structure and using it for my own development.
 * Intro to HTML and CSS
 * Responsive Web Design Fundamentals
 * Responsive Images
-* Project: Build a portolio site -> Brief: design mockup in pdf, replicate using Html and CSS
+* [Project: Build a portolio site for Udacity Course](https://github.com/malevolentninja/udacity/tree/master/udacity_portfolio)
 
 ### Part 2
 * [JavaScript Basics](https://github.com/malevolentninja/Udacity/tree/master/Javascript/javaScript_Basics)
